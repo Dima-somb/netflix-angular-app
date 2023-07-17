@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  // by default, it is Series type
+  public category = '';
 }

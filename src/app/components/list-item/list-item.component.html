@@ -1,12 +1,30 @@
-<div class="list-item">
+<div class="list-item"
+     (mouseenter)="setIsHovered(true)"
+     (mouseleave)="setIsHovered(false)"
+     #listItemRef
+>
   <img src="https://occ-0-1723-92.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU7D36jL6KiLG1xI8Xg_cZK-hYQj1L8yRxbQuB0rcLCnAk8AhEK5EM83QI71bRHUm0qOYxonD88gaThgDaPu7NuUfRg.jpg?r=4ee" alt="">
+  <ng-container *ngIf="isHovered">
+    <video [src]="trailer" [autoplay]="true" loop></video>
+    <div class="item-info">
+      <div class="icons">
+        <mat-icon class="icon">play_arrow</mat-icon>
+        <mat-icon class="icon">add</mat-icon>
+        <mat-icon class="icon">thumb_up_altup</mat-icon>
+        <mat-icon class="icon">thumb_down_off_alt</mat-icon>
+      </div>
 
-  <div class="item-info">
-    <div class="icons">
-      <mat-icon>play_arrow</mat-icon>
-      <mat-icon>add</mat-icon>
-      <mat-icon>thumb_up_altup</mat-icon>
-      <mat-icon>thumb_down_off_alt</mat-icon>
+      <div class="item-info-top">
+        <span>1 hour 14 mins</span>
+        <span class="limit">+16</span>
+        <span>1999</span>
+      </div>
+      <div class="desc">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorem fuga illum mollitia perferendis repellendus.</p>
+      </div>
+      <div class="genre"><p>Action</p></div>
     </div>
-  </div>
+  </ng-container>
 </div>
+
+

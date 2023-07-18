@@ -11,6 +11,7 @@ export class ListComponent {
 
   sliderNumber = 0;
   isMoved = false;
+  movieArray = [1,2,3,4,5,6,7,8,9,10];
 
   handleClick(direction: string) {
     let distance = this.listRef.nativeElement.getBoundingClientRect().x - 50;

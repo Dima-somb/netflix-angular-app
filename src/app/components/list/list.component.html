@@ -1,0 +1,30 @@
+<div class="list">
+  <span class="list-title">Continue to watch</span>
+  <div class="wrapper">
+    <mat-icon class="slider-arrow left"
+              (click)="handleClick('left')"
+              [style.display]="this.sliderNumber === 0 ? 'none' : 'flex'"
+    >
+      arrow_back_ios
+    </mat-icon>
+    <div class="container" #listRef>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+      <app-list-item></app-list-item>
+    </div>
+    <mat-icon
+      class="slider-arrow right"
+      (click)="handleClick('right')"
+      [style.display]="this.sliderNumber === 2 ? 'none' : 'flex'"
+    >
+      arrow_forward_ios
+    </mat-icon>
+  </div>
+</div>

@@ -8,13 +8,17 @@ import { HomeComponent } from './home/home.component';
 import {MatIconModule} from "@angular/material/icon";
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FeaturedComponent } from './components/featured/featured.component';
+import { ListComponent } from './components/list/list.component';
+import { ListItemComponent } from './components/list-item/list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FeaturedComponent
+    FeaturedComponent,
+    ListComponent,
+    ListItemComponent
   ],
     imports: [
         BrowserModule,

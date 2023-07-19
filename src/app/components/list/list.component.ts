@@ -27,6 +27,5 @@ export class ListComponent {
 
   private setSlideNumber(changeNumberOfSlides: number) {
     this.sliderNumber = changeNumberOfSlides;
-
   }
 }

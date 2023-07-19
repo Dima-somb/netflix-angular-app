@@ -14,8 +14,8 @@ export class ListItemComponent {
   // setIsHovered: any
 
   setIsHovered(boolParam: boolean) {
+    this.isHovered = boolParam;
     if(boolParam) {
-      this.isHovered = boolParam;
      this.listItemRef.nativeElement.style.left = `${(this.index * 225) - 50 + (this.index * 2.5)}px`;
       console.log(this.listItemRef.nativeElement.style.left)
     }

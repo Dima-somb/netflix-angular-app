@@ -17,11 +17,12 @@ export class ListComponent {
     let distance = this.listRef.nativeElement.getBoundingClientRect().x - 50;
     if (direction === "left" && this.sliderNumber > 0) {
       this.setSlideNumber(this.sliderNumber - 1);
-      this.listRef.nativeElement.style.transform = `translateX(${230 + distance}px)`
+      this.listRef.nativeElement.style.transform = `translateX(${338 + distance}px)`
     }
-    if (direction === "right" && this.sliderNumber < 2) {
+    if (direction === "right" && this.sliderNumber < 5) {
+      console.log(this.sliderNumber);
       this.setSlideNumber(this.sliderNumber + 1);
-      this.listRef.nativeElement.style.transform = `translateX(${-230 + distance}px)`
+      this.listRef.nativeElement.style.transform = `translateX(${-338 + distance}px)`
     }
   }
 

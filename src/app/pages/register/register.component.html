@@ -1,0 +1,18 @@
+<div class="register">
+  <div class="top">
+    <div class="wrapper">
+    <img src="assets/logo.svg" alt="logo">
+    <button class="login-button">Sign in</button>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Unlimited movies, TV shows, and more.</h1>
+    <h2>Watch anywhere. Cancel anytime</h2>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <form [formGroup]="registerForm" class="input">
+      <input type="email" placeholder="{{this.status.inputStatus}}" formControlName="email">
+      <button class="register-button" type="submit" (click)="clickHandle()">{{ this.status.btnStatus}}</button>
+    </form>
+  </div>
+</div>
+
